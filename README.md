@@ -175,6 +175,29 @@ The project uses ESLint with the following configuration:
 6. **HTTP Interceptors**: Efficient API request/response handling
 7. **Authentication Optimization**: JWT tokens cached in HTTP-only cookies
 
+## 🚀 CI/CD Pipeline
+
+The project includes automated GitHub Actions workflows for continuous integration and deployment:
+
+### Build Process
+- **Automated building** on every push and PR
+- **Code linting** with ESLint
+- **TypeScript compilation** checks
+- **Build verification** to ensure deployability
+
+### Deployment
+- **GitHub Pages**: Automatic deployment on main/master branch
+- **Zero configuration**: No additional secrets or setup required
+
+```bash
+# Manual deployment commands
+npm run deploy        # Deploy to GitHub Pages
+npm run build        # Build for production
+npm run type-check   # TypeScript validation
+```
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions.
+
 ## 📱 Browser Support
 
 - Chrome (latest)
